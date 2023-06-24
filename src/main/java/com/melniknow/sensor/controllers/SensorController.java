@@ -49,8 +49,8 @@ public class SensorController {
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
-    @GetMapping("show_all")
-    public ResponseEntity<SensorFindAllDTO> showAll() {
+    @GetMapping
+    public ResponseEntity<SensorFindAllDTO> findAll() {
         return new ResponseEntity<>(new SensorFindAllDTO(sensorService.findAll()), HttpStatus.OK);
     }
 

@@ -1,4 +1,4 @@
--- Create database & user
+-- Create database & user:
 -- > sudo su postgres
 -- > psql
 
